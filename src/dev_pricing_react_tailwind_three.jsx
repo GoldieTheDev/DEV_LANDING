@@ -312,12 +312,15 @@ export default function DevPricingLanding() {
 
       {/* NAV */}
       <nav className="sticky top-0 z-20 border-b border-slate-200 bg-white/80 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
+        <div className={`mx-auto flex max-w-6xl items-center justify-between px-4 py-4 ${lang === 'ar' ? 'flex-row-reverse' : ''}`}>
+          {/* Brand */}
           <div className="flex items-center gap-3">
             <div className="grid h-9 w-9 place-items-center rounded-xl bg-gradient-to-br from-cyan-400 to-violet-500 font-extrabold text-white">EC</div>
-            <span className="text-sm tracking-widest text-slate-700">{t.brand}</span>
+            <span className="text-sm tracking-widest text-slate-700">EXPERTCODER</span>
           </div>
-          <div className="hidden items-center gap-2 md:flex">
+
+          {/* Desktop nav */}
+          <div className={`hidden md:flex items-center gap-2 ${lang === 'ar' ? 'flex-row-reverse' : ''}`}>
             <a href="#pricing" className="px-3 py-2 text-slate-700 hover:text-slate-900">{t.nav.pricing}</a>
             <a href="#portfolio" className="px-3 py-2 text-slate-700 hover:text-slate-900">{t.nav.portfolio}</a>
             <a href="#faq" className="px-3 py-2 text-slate-700 hover:text-slate-900">{t.nav.faq}</a>
@@ -330,8 +333,24 @@ export default function DevPricingLanding() {
               {lang === 'en' ? copy.en.toggle.ar : copy.ar.toggle.en}
             </button>
           </div>
+
+          {/* Mobile quick actions */}
+          <div className={`flex md:hidden items-center gap-2 ${lang === 'ar' ? 'flex-row-reverse' : ''}`}>
+            <a href="#contact" className="rounded-full bg-gradient-to-r from-cyan-400 to-violet-500 px-3 py-2 text-xs font-semibold text-white shadow">
+              {t.nav.contact}
+            </a>
+            <button
+              onClick={() => setLang(lang === 'en' ? 'ar' : 'en')}
+              className="inline-flex items-center gap-2 rounded-full !bg-gradient-to-r !from-cyan-400 !to-violet-500 px-3 py-2 text-xs font-semibold !text-white shadow border-0"
+              aria-label="Toggle language"
+            >
+              <Languages className="h-4 w-4" />
+              {lang === 'en' ? copy.en.toggle.ar : copy.ar.toggle.en}
+            </button>
+          </div>
         </div>
       </nav>
+
 
       {/* HERO */}
       <header className="relative">
