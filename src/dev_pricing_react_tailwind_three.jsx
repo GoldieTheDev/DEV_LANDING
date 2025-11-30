@@ -248,7 +248,7 @@ const llmProjects = {
       title: "NLP Resume Analyzer — محلل سير ذاتية",
       subtitle: "تحليل CV باستخدام NLP",
       meta:
-        "أداة مبنية على Hugging Face تقوم بقراءة السيرة الذاتية واستخراج المهارات وتقديم ملاحظات تلقائية اعتمادًا على معالجة اللغة الطبيعية.",
+        "أداة مبنية على Hugging Face تقوم بقراءة السيرة الذاتية واستخراج المهارات وتقديم ملاحظات تلقائية اعتمادًا على معالجة NLP.",
       href: "https://huggingface.co/spaces/GoldieTheDev/nlp-resume-analyzer",
       cta: "جرّب الأداة",
     },
