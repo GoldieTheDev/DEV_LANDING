@@ -20,22 +20,23 @@ const copy = {
       seePortfolio: "See Portfolio",
     },
     pricing: {
-      sectionKicker: "Choose what fits",
-      title: "Transparent Pricing in SAR",
-      sar: "SAR",
+      sectionKicker: "Services",
+      title: "What I can build for you",
       landing: {
         title: "Landing Page",
-        period: "one‑time",
+        period: "Timeline: ~1–3 days",
+        tagline: "Best for product launches, personal sites, and single campaigns.",
         features: [
-          "Sleek single‑page design (responsive)",
+          "Sleek single-page design (responsive)",
           "Hero, services, pricing, contact",
           "Basic SEO & analytics hook",
           "Publish on GitHub Pages (free hosting + HTTPS)",
         ],
       },
       full: {
-        title: "Full‑Stack Platform",
-        period: "project",
+        title: "Full-Stack Platform",
+        period: "Timeline: ~1–3 weeks",
+        tagline: "For SaaS, dashboards, and apps that need auth + database.",
         features: [
           "Frontend + Backend + Database",
           "Auth, CRUD, admin dashboard",
@@ -44,28 +45,39 @@ const copy = {
         ],
       },
       addons: {
-        title: "Add‑Ons",
-        period: "per module",
+        title: "Add-Ons",
+        period: "Scope: flexible",
+        tagline: "Enhance existing projects with AI, 3D, branding, or maintenance.",
         features: [
           "AI chat / content generation",
           "3D/Three.js hero or gallery",
           "Branding & UI kit",
-          "Maintenance: 300 SAR / mo",
+          "Maintenance: per-project agreement",
         ],
       },
       apps: {
         title: "Enterprise Apps (Web + iOS + Android)",
-        period: "project",
+        period: "Timeline: custom",
+        tagline: "For larger multi-platform builds with web, mobile, and backend.",
         features: [
           "Unified backend + REST/GraphQL API",
           "Mobile apps (iOS & Android) + Web",
           "CI/CD, crash reporting, analytics",
-          "Optional maintenance: 500 SAR / mo",
+          "Optional long-term maintenance",
         ],
       },
-      note: "* External payment fees / hosting not included.",
+      note: "Every project is priced individually based on scope, complexity, and timeline.",
     },
-    portfolio: { kicker: "Interactive previews", title: "Recent Work & Demos" },
+
+    portfolio: {
+      kicker: "Interactive previews",
+      title: "Recent Work & Demos",
+      llmKicker: "NLP / LLM apps",
+      llmTitle: "NLP & LLM Projects",
+      llmIntro:
+        "A few language + AI tools I’ve been building lately — from resume analysis to SEO and developer productivity assistants.",
+    },
+
     faq: {
       title: "FAQ",
       kicker: "Common questions",
@@ -107,12 +119,12 @@ const copy = {
       seePortfolio: "شاهد الأعمال",
     },
     pricing: {
-      sectionKicker: "اختر ما يناسبك",
-      title: "الأسعار بالريال السعودي",
-      sar: "ريال",
+      sectionKicker: "الخدمات",
+      title: "ماذا يمكنني أن أقدّم لك",
       landing: {
         title: "واجهة موقع",
-        period: "مرة واحدة",
+        period: "المدة المتوقعة: 1–3 أيام",
+        tagline: "مثالية لإطلاق منتج، صفحة شخصية، أو حملة واحدة.",
         features: [
           "تصميم صفحة واحدة متجاوبة",
           "أقسام: نبذة، خدمات، تسعير، تواصل",
@@ -122,7 +134,8 @@ const copy = {
       },
       full: {
         title: "منصة متكاملة",
-        period: "مشروع",
+        period: "المدة المتوقعة: 1–3 أسابيع",
+        tagline: "لـ SaaS، ولوحات التحكم، والمشاريع التي تحتاج قاعدة بيانات وصلاحيات.",
         features: [
           "واجهة أمامية + خلفية + قاعدة بيانات",
           "تسجيل دخول وصلاحيات ولوحة تحكم",
@@ -132,27 +145,38 @@ const copy = {
       },
       addons: {
         title: "إضافات",
-        period: "لكل وحدة",
+        period: "نطاق العمل: مرن",
+        tagline: "تحسين المشاريع الحالية بالذكاء الاصطناعي أو 3D أو الهوية البصرية أو الصيانة.",
         features: [
           "ذكاء اصطناعي للدردشة/المحتوى",
           "مشاهد 3D/Three.js",
           "هوية بصرية وواجهة مستخدم",
-          "صيانة: 300 ريال / شهريًا",
+          "الصيانة حسب اتفاق كل مشروع",
         ],
       },
       apps: {
         title: "تطبيقات مؤسسية (ويب + iOS + أندرويد)",
-        period: "مشروع",
+        period: "المدة: تُحدد حسب حجم المشروع",
+        tagline: "للمشاريع الأكبر متعددة المنصات (ويب + جوال + خادم).",
         features: [
           "خادم موحّد + REST/GraphQL API",
           "تطبيقات جوال (iOS & Android) + ويب",
           "تكامل CI/CD وتقارير الأعطال وتحليلات",
-          "صيانة اختيارية: 500 ريال / شهريًا",
+          "إمكانية الاتفاق على صيانة طويلة الأمد",
         ],
       },
-      note: "* رسوم الدفع/الاستضافة الخارجية غير مشمولة.",
+      note: "كل مشروع يُسعَّر بشكل منفصل حسب النطاق والتعقيد والمدة.",
     },
-    portfolio: { kicker: "معاينات تفاعلية", title: "أعمال وعروض حديثة" },
+
+    portfolio: {
+      kicker: "معاينات تفاعلية",
+      title: "أعمال وعروض حديثة",
+      llmKicker: "تطبيقات الذكاء الاصطناعي واللغة",
+      llmTitle: "مشاريع NLP / LLM",
+      llmIntro:
+        "مجموعة من الأدوات التي طوّرتها بالاعتماد على معالجة اللغة الطبيعية والـ LLM — لتحليل السير الذاتية، وفحص الـ SEO، ومساعدة المطورين على فهم مشاريعهم.",
+    },
+
     faq: {
       title: "الأسئلة الشائعة",
       kicker: "إجابات مختصرة",
@@ -183,6 +207,62 @@ const copy = {
     toggle: { ar: "العربية", en: "EN" },
   },
 };
+
+const llmProjects = {
+  en: [
+    {
+      title: "Elo Hospital — Dev Productivity SaaS",
+      subtitle: "Developer productivity & code quality",
+      meta:
+        "Analyzes codebases and live sites to surface performance and code-quality issues so devs know what to fix next.",
+      href: "https://elo-hospital.vercel.app/",
+      cta: "Open live app",
+    },
+    {
+      title: "NLP Resume Analyzer",
+      subtitle: "Resume analysis with custom NLP",
+      meta:
+        "A Hugging Face Space that scores resumes, extracts key skills, and returns structured feedback powered by custom NLP pipelines.",
+      href: "https://huggingface.co/spaces/GoldieTheDev/nlp-resume-analyzer",
+      cta: "Try on Hugging Face",
+    },
+    {
+      title: "SEO Auditor",
+      subtitle: "Lightweight SEO inspection tool",
+      meta:
+        "Audits pages for titles, meta tags, headings and basic technical SEO checks as a free browser-based analyzer.",
+      href: "https://seo-auditor-alpha.vercel.app/",
+      cta: "Run SEO audit",
+    },
+  ],
+  ar: [
+    {
+      title: "Elo Hospital — منصة إنتاجية للمطورين",
+      subtitle: "لوحة لمتابعة جودة الكود والأداء",
+      meta:
+        "تحلل المشاريع والمواقع المباشرة لإبراز مشاكل الأداء وجودة الكود ومساعدة المطور على معرفة ما يجب تحسينه أولًا.",
+      href: "https://elo-hospital.vercel.app/",
+      cta: "فتح التطبيق",
+    },
+    {
+      title: "NLP Resume Analyzer — محلل سير ذاتية",
+      subtitle: "تحليل CV باستخدام NLP",
+      meta:
+        "أداة مبنية على Hugging Face تقوم بقراءة السيرة الذاتية واستخراج المهارات وتقديم ملاحظات تلقائية اعتمادًا على معالجة اللغة الطبيعية.",
+      href: "https://huggingface.co/spaces/GoldieTheDev/nlp-resume-analyzer",
+      cta: "جرّب الأداة",
+    },
+    {
+      title: "SEO Auditor — مدقق SEO",
+      subtitle: "فحص سريع لعناصر تحسين محركات البحث",
+      meta:
+        "يفحص عناوين الصفحات والـ meta tags والعناوين الأساسية ليكشف فرص تحسين السيو بدون الحاجة لاشتراك مدفوع.",
+      href: "https://seo-auditor-alpha.vercel.app/",
+      cta: "بدء فحص SEO",
+    },
+  ],
+};
+
 
 // =====================================
 // 3D SCENE
@@ -264,20 +344,32 @@ function Section({ id, title, kicker, children }) {
   );
 }
 
-function PriceCard({ icon: Icon, title, price, period, features, sarLabel }) {
+function PriceCard({ icon: Icon, title, tagline, period, features }) {
   return (
     <div className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white p-6 shadow transition-transform duration-300 transform-gpu hover:-translate-y-1 hover:scale-[1.01] hover:shadow-xl">
+      {/* Header */}
       <div className="flex items-center gap-3">
         <div className="rounded-xl border border-slate-200 bg-slate-50 p-3">
           <Icon className="h-6 w-6 text-slate-900" />
         </div>
         <h3 className="text-xl font-bold text-slate-900">{title}</h3>
       </div>
-      <div className="mt-4 flex items-end gap-2">
-        <span className="text-4xl font-extrabold text-slate-900">{price}</span>
-        <span className="pb-1 text-sm text-slate-600">{sarLabel}</span>
-        <span className="pb-1 text-sm text-slate-600">• {period}</span>
+
+      {/* Tagline + period instead of price */}
+      <div className="mt-4 space-y-1">
+        {tagline && (
+          <p className="text-sm font-medium text-slate-700">
+            {tagline}
+          </p>
+        )}
+        {period && (
+          <p className="text-xs text-slate-500">
+            {period}
+          </p>
+        )}
       </div>
+
+      {/* Features */}
       <ul className="mt-6 flex-1 space-y-3 text-slate-700">
         {features.map((f, i) => (
           <li key={i} className="flex items-start gap-3">
@@ -286,7 +378,14 @@ function PriceCard({ icon: Icon, title, price, period, features, sarLabel }) {
           </li>
         ))}
       </ul>
-      <a href="#contact" className="mt-6 w-full rounded-xl bg-gradient-to-r from-cyan-400 to-violet-500 px-4 py-3 text-center font-semibold text-white shadow-lg hover:scale-[1.02] transition">Get Started</a>
+
+      {/* CTA */}
+      <a
+        href="#contact"
+        className="mt-6 w-full rounded-xl bg-gradient-to-r from-cyan-400 to-violet-500 px-4 py-3 text-center font-semibold text-white shadow-lg hover:scale-[1.02] transition"
+      >
+        Get a custom quote
+      </a>
     </div>
   );
 }
@@ -380,10 +479,34 @@ export default function DevPricingLanding() {
       {/* PRICING */}
       <Section id="pricing" title={t.pricing.title} kicker={t.pricing.sectionKicker}>
         <div className="grid items-stretch gap-6 md:grid-cols-4">
-          <PriceCard icon={Rocket} title={t.pricing.landing.title} price={"1,000"} period={t.pricing.landing.period} features={t.pricing.landing.features} sarLabel={t.pricing.sar} />
-          <PriceCard icon={ServerCog} title={t.pricing.full.title} price={"4,000"} period={t.pricing.full.period} features={t.pricing.full.features} sarLabel={t.pricing.sar} />
-          <PriceCard icon={Code2} title={t.pricing.addons.title} price={"150+"} period={t.pricing.addons.period} features={t.pricing.addons.features} sarLabel={t.pricing.sar} />
-          <PriceCard icon={Smartphone} title={t.pricing.apps.title} price={"15,000"} period={t.pricing.apps.period} features={t.pricing.apps.features} sarLabel={t.pricing.sar} />
+          <PriceCard
+          icon={Rocket}
+          title={t.pricing.landing.title}
+          tagline={t.pricing.landing.tagline}
+          period={t.pricing.landing.period}
+          features={t.pricing.landing.features}
+        />
+          <PriceCard
+          icon={ServerCog}
+          title={t.pricing.full.title}
+          tagline={t.pricing.full.tagline}
+          period={t.pricing.full.period}
+          features={t.pricing.full.features}
+        />
+          <PriceCard
+          icon={Code2}
+          title={t.pricing.addons.title}
+          tagline={t.pricing.addons.tagline}
+          period={t.pricing.addons.period}
+          features={t.pricing.addons.features}
+        />
+          <PriceCard
+          icon={Smartphone}
+          title={t.pricing.apps.title}
+          tagline={t.pricing.apps.tagline}
+          period={t.pricing.apps.period}
+          features={t.pricing.apps.features}
+        />
         </div>
         <p className="mt-3 text-center text-sm text-slate-600">{t.pricing.note}</p>
       </Section>
@@ -471,6 +594,57 @@ export default function DevPricingLanding() {
               <span className="rounded-full bg-slate-100 px-3 py-1 text-xs text-slate-700 opacity-0 transition group-hover:opacity-100">Live Demo</span>
             </div>
           </motion.a>
+        </div>
+          {/* NLP / LLM projects */}
+        <div className="mt-12 space-y-4">
+          <div className="flex items-center gap-3">
+            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
+              {t.portfolio.llmKicker}
+            </span>
+            <span className="h-px flex-1 bg-slate-200" />
+          </div>
+
+          <h3 className="text-lg font-semibold text-slate-900">
+            {t.portfolio.llmTitle}
+          </h3>
+
+          <p className="max-w-2xl text-sm text-slate-600">
+            {t.portfolio.llmIntro}
+          </p>
+
+          <div className="grid gap-6 md:grid-cols-3">
+            {llmProjects[lang].map((project, index) => (
+              <motion.a
+                key={project.title}
+                href={project.href}
+                target="_blank"
+                rel="noreferrer noopener"
+                initial={{ opacity: 0, y: 12 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 + index * 0.05 }}
+                whileHover={{ y: -4, scale: 1.02 }}
+                className="group relative overflow-hidden rounded-2xl border border-slate-200 bg-white p-4 shadow transition-transform duration-300"
+              >
+                <div className="relative h-44 w-full overflow-hidden rounded-xl">
+                  <div className="absolute inset-0 bg-gradient-to-br from-cyan-200/30 to-violet-200/30" />
+                  <div className="absolute inset-0 grid place-items-center px-4 text-center text-xl font-extrabold text-slate-900">
+                    {project.title}
+                  </div>
+                </div>
+
+                <div className="mt-4 flex items-center justify-between">
+                  <div>
+                    <h4 className="font-semibold">{project.subtitle}</h4>
+                    <p className="text-sm text-slate-600">{project.meta}</p>
+                  </div>
+                  <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-700 opacity-0 transition group-hover:opacity-100">
+                    {project.cta}
+                  </span>
+                </div>
+              </motion.a>
+            ))}
+          </div>
         </div>
       </Section>
 
