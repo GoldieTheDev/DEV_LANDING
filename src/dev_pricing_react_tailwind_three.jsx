@@ -10,7 +10,7 @@ import { Rocket, Code2, ServerCog, Smartphone, Sparkles, Star, Github, Mail, Pho
 const copy = {
   en: {
     brand: "EXPERTCODER",
-    nav: { pricing: "Pricing", portfolio: "Portfolio", faq: "FAQ", contact: "Contact" },
+    nav: { pricing: "Packages", portfolio: "Portfolio", faq: "FAQ", contact: "Contact" },
     hero: {
       kicker: "Interactive • Modern • Professional",
       title: "Build. Impress. Convert.",
