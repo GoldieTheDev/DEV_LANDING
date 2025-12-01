@@ -16,7 +16,7 @@ const copy = {
       title: "Build. Impress. Convert.",
       desc:
         "From a sleek landing page to a full‑stack platform with backend & database—delivered with stunning visuals and smooth motion.",
-      viewPricing: "View Pricing",
+      viewPricing: "View Packages",
       seePortfolio: "See Portfolio",
     },
     pricing: {
