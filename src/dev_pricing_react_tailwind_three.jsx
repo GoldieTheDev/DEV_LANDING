@@ -109,7 +109,7 @@ const copy = {
   },
   ar: {
     brand: "EXPERTCODER",
-    nav: { pricing: "الأسعار", portfolio: "الأعمال", faq: "الأسئلة", contact: "تواصل" },
+    nav: { pricing: "الباقات", portfolio: "الأعمال", faq: "الأسئلة", contact: "تواصل" },
     hero: {
       kicker: "تفاعلي • عصري • احترافي",
       title: "ابنِ. أبهِر. حوّل.",
